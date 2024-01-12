@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react test 4</title>
+</head>
+<body>
+        <pre>
+            1.What are the advantages of React? 
+            React is open source javascript library,used for single page web application.
+            Virtual DOM and Performance Optimization.
+            Scalability and Flexibility.
+            Reusable Components and Code Reusability.
+
+            -------------------------------------------------------------------------------------
+
+            2.Differentiate between Real DOM and Virtual DOM.
+            the DOM represents the actual HTML structure of a web page, while the Virtual
+            DOM is a lightweight copy of the DOM used by React to enhance performance 
+             while updating the actual DOM
+
+            -------------------------------------------------------------------------------------
+
+            3.What is React Router? 
+            React Router is a standard library for routing in React. It enables the navigation
+            among views of various components in a React Application, allows changing 
+            the browser URL, and keeps the UI in sync with the URL
+            -------------------------------------------------------------------------------------
+
+            4.What are the different phases of React component’s lifecycle? 
+            i)Initializing. This is the initial phase of the React component lifecycle. ...
+            ii)Mounting. (componentDidMount(): The method invoked immediately after the component is positioned on the DOM, i.e. right after the component is rendered on the screen for the very first time)
+            iii)Updating. ...(componentDidUpdate(): The method invoked immediately after the component is re-rendered after updating the states and/or properties.)
+            (shouldComponentUpdate(): The method invoked before deciding whether the newly rendered props are required to be displayed on the webpage or not)
+            iV)Unmounting.(The method invoked immediately before the component is removed from the DOM)
+
+            -------------------------------------------------------------------------------------
+            5.Differentiate between state and props 
+            Props are used to pass data from a parent component to a child component, 
+            while state is used to manage data within a component.
+
+            Props are immutable and cannot be changed within a component,
+            while state is mutable and can be updated using the setState function.
+
+            -------------------------------------------------------------------------------------
+
+            6.What is Param and Search Params? Write one example?  
+            Param->React JS useParams Hook helps to access the parameters of the current route
+            to manage the dynamic routes in the URL. The react-router-dom package has
+            useParams hooks that let you access and use the parameters of the current 
+            route as required.
+
+            Eg:"< Route path='/ban/:id/:name' element={< Banner/>}>< /Route>"
+            let {id,name}=useParams()
+
+            =>Searchparam->Way to pass state through the URL. They are part of the URL 
+            that comes after a question mark ?, and they consist of key/value pairs separated by &
+
+            Ex:let [param]=useSearchParams()
+            "< Link to='/?price=100000&name=watch'>You want to go next page?< /Link>"
+
+            -------------------------------------------------------------------------------------
+
+            7.Why should we not update the state directly?  
+            Updating the state of a component directly can have unintended consequences that
+            can be difficult to debug. If the state is updated directly as in the example above, 
+            the component will not rerender since the state is compared shallowly
+            -------------------------------------------------------------------------------------
+            8. What is the difference between HTML and React event handling?
+            =>In HTML, event names are written in lowercase, however in React, they are written in camelCase.
+
+            =>In HTML, we may avoid default behavior by returning false, but in React, we must call preventDefault() explicitly
+        
+            =>In HTML, the function is called by inserting "()" to the function name. 
+            If we don't want to utilize this way, we may use addEventLisener to provide
+             events and listeners, however in React, we require the method name without the "()" appended.
+        </pre>
+</body>
+</html>
